@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1537405360135.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2683676340",
+    "id" : "DA44E3BE",
+    "lastKnownWriteTime" : 1537405344,
+    "last_content_update" : 1537405344,
+    "path" : "~/Documents/GitHub/BS_auto/src/load_packages.R",
+    "project_path" : "src/load_packages.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

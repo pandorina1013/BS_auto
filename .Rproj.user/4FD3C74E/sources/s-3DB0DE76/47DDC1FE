@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1537409350317.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1760108352",
+    "id" : "47DDC1FE",
+    "lastKnownWriteTime" : 1537409609,
+    "last_content_update" : 1537409609211,
+    "path" : "~/Documents/GitHub/BS_auto/src/get_rank.R",
+    "project_path" : "src/get_rank.R",
+    "properties" : {
+        "cursorPosition" : "39,4",
+        "scrollLine" : "6"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
