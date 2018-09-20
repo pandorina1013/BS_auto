@@ -21,6 +21,10 @@ get.BS <- function(input.df ,filedir){
     num.col <- colnames.df[i,] %>% 
       select(numeric) %>% 
       as.character()
+    dist.name <- input.df %>% 
+      select_(chr.col) %>% 
+      distinct_(chr.col) %>% 
+      mutate_if(is.factor, as.character)
     
     input.df %>% 
       summarise_(
@@ -33,17 +37,19 @@ get.BS <- function(input.df ,filedir){
       data.frame(name = "all", .) %>% 
       write.csv(paste0(filedir ,"/BS/choose_all_BSby_", num.col, ".csv"), row.names = F)
     
-    input.df %>% 
-      group_by_(chr.col) %>% 
-      summarise_(
-        sum = paste0("sum(",num.col,")"),
-        mean = paste0("mean(",num.col,")"),
-        count = paste0("NROW(",num.col,")"),
-        max = paste0("max(",num.col,")"),
-        min = paste0("min(",num.col,")")
-        ) %>% 
-      write.csv(paste0(filedir ,"/BS/choose_", chr.col, "_BSby_", num.col, ".csv"), row.names = F)
-    message(paste0(filedir ,"/BS/choose_", chr.col, "_BSby_", num.col))
+    if(NROW(dist.name) != NROW(input.df)){
+      input.df %>% 
+        group_by_(chr.col) %>% 
+        summarise_(
+          sum = paste0("sum(",num.col,")"),
+          mean = paste0("mean(",num.col,")"),
+          count = paste0("NROW(",num.col,")"),
+          max = paste0("max(",num.col,")"),
+          min = paste0("min(",num.col,")")
+          ) %>% 
+        write.csv(paste0(filedir ,"/BS/choose_", chr.col, "_BSby_", num.col, ".csv"), row.names = F)
+      message(paste0(filedir ,"/BS/choose_", chr.col, "_BSby_", num.col))
+    }
   }
   message("...and all!")
 }
