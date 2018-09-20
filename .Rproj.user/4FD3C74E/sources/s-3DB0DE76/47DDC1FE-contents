@@ -6,6 +6,7 @@ load_packages(c(
 
 # character型の列をキーとしてそれぞれのランキングを出力します。
 get.rank <- function(input.df ,filedir){
+  dir.create(paste0(filedir))
   dir.create(paste0(filedir ,"/rank"))
   
   colnames.df <- expand.grid(

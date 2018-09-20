@@ -5,6 +5,7 @@ load_packages(c(
 ))
 # character型の列をキーとしてそれぞれの統計量を出力します。（適当に追加してください）
 get.BS <- function(input.df ,filedir){
+  dir.create(paste0(filedir))
   dir.create(paste0(filedir ,"/BS"))
   colnames.df <- expand.grid(
     character = select_if(input.df, is.character) %>% 
