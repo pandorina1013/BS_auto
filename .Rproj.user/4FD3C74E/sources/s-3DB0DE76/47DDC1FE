@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "1760108352",
+    "hash" : "1516199008",
     "id" : "47DDC1FE",
-    "lastKnownWriteTime" : 1537409609,
-    "last_content_update" : 1537409609211,
+    "lastKnownWriteTime" : 1537410649,
+    "last_content_update" : 1537410649244,
     "path" : "~/Documents/GitHub/BS_auto/src/get_rank.R",
     "project_path" : "src/get_rank.R",
     "properties" : {
-        "cursorPosition" : "39,4",
-        "scrollLine" : "6"
+        "cursorPosition" : "8,27",
+        "scrollLine" : "0"
     },
     "relative_order" : 4,
     "source_on_save" : false,
